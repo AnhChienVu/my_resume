@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            line-height: 1.6;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+        .border {
+            margin-bottom: 20px;
+            border: #2c3e50 1px solid;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Resume</h1>
+    
+    <div class="border" id="objective">
+        <h2>Objective (Clicks: <span id="count-objective">{{.ObjectiveCount}}</span>)</h2>
+        <p>Enthusiastic Computer Science student with a strong foundation in software development, eager to apply my technical skills in a Software Developer Intern role. Passionate about writing clean, maintainable code, learning from experienced developers, and contributing to high-quality software solutions.</p>
+    </div>
+
+    <div class="border" id="education" >
+        <h2>Education (Clicks: <span id="count-education">{{.EducationCount}}</span>)</h2>
+        <p><strong>Computer Programming and Analysis</strong> - Seneca Polytechnic, Toronto (September 2022 – Present)</p>
+        <p><strong>Cumulative GPA:</strong> 4.0/4.0</p>
+        <ul>
+            <li>Relevant Courses: Cloud Computing, Open-Source Development, Data Structures and Algorithms, Object-Oriented Programming, Client and Server-side Web Development.</li>
+            <li>Awards: International Student Achievement Award | Seneca President’s Honour List</li>
+        </ul>
+    </div>
+
+    <div class="border" id="skills">
+        <h2>Technical Skills (Clicks: <span id="count-skills">{{.SkillsCount}}</span>)</h2>
+        <ul>
+            <li><strong>Programming Languages:</strong> JavaScript, Python, C/C++, C#, Java, PHP.</li>
+            <li><strong>Web & Mobile Development:</strong> HTML5, CSS3, React.js, Next.js, Bootstrap, ASP.NET.</li>
+            <li><strong>Backend & APIs:</strong> RESTful APIs, Node.js, Express.js.</li>
+            <li><strong>Database Management:</strong> PostgreSQL, MySQL, MongoDB, SQL Server.</li>
+            <li><strong>Cloud & Enterprise Technologies:</strong> Microsoft 365, SharePoint Online, AWS Services, PowerShell.</li>
+            <li><strong>Testing & Deployment:</strong> Jest, Hurl, GitHub Actions, Docker, CI/CD Pipelines.</li>
+            <li><strong>Version Control & Collaboration:</strong> Git, GitHub, Agile, Jira, Trello.</li>
+            <li><strong>UI/UX Performance:</strong> Responsive design, accessibility, SEO Optimization.</li>
+        </ul>
+    </div>
+
+    <div class="border" id="projects">
+        <h2>Projects (Clicks: <span id="count-projects">{{.ProjectCount}}</span>)</h2>
+        <h3>Tummy Time – Newborn Care Tracking Web Application</h3>
+        <p><strong>Technologies used:</strong> Node.js, Express.js, Next.js, PostgreSQL, React-bootstrap, AWS Cognito, Jest</p>
+        <ul>
+            <li>Developed a user-centric web application to assist parents in tracking newborn care activities, improving engagement and usability.</li>
+            <li>Collaborated with designers and stakeholders to refine UI/UX for a seamless experience.</li>
+            <li>Implemented secure authentication with AWS Cognito, ensuring data privacy and compliance.</li>
+            <li>Designed and deployed RESTful APIs, facilitating efficient data communication between frontend and backend.</li>
+            <li>Ensured cross-browser and cross-device compatibility while resolving UI inconsistencies.</li>
+            <li>Utilized Jest for unit testing, achieving 80%+ test coverage to enhance software reliability.</li>
+        </ul>
+        
+        <h3>AWS Cloud-based Data Management System</h3>
+        <p><strong>Technologies used:</strong> AWS Services (Cognito, EC2), Node.js, Express.js, Docker, JavaScript</p>
+        <ul>
+            <li>Assisted in developing an AWS-hosted microservice that improved data management and retrieval processes.</li>
+            <li>Implemented secure authentication and optimized database queries, improving performance by 30%.</li>
+            <li>Participated in testing and debugging to ensure seamless integration and high-quality performance.</li>
+        </ul>
+
+        <h3>Automated CLI Documentation Tool</h3>
+        <p><strong>Technologies used:</strong> JavaScript, Large Language Model, Node.js, Jest</p>
+        <ul>
+            <li>Built a robust CLI tool to automate README generation by analyzing source code, reducing documentation time by up to 50% for developers.</li>
+            <li>Streamlined project workflows by integrating a CI/CD pipeline with GitHub Actions, leading to 25% faster release cycles due to automated testing and code quality checks.</li>
+            <li>Integrated with OpenAI’s Chat Completions API to support advanced data processing, allowing for dynamic configuration of model parameters like temperature and model selection.</li>
+            <li>Achieved 95% accuracy in README generation tests, ensuring comprehensive and clear documentation for various input codebases.</li>
+        </ul>
+    </div>
+
+    <script src="../js/index.js"></script>
+</body>
+</html>
